@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasbeeh Counter</title>
+</head>
+<script src="https://kit.fontawesome.com/d940d584d4.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="Group 18.png" type="image/x-icon">
+
+<body>
+    <div class="container">
+        <div class="main_content" id="app">
+            <h1>Tasbeeh Counter</h1>
+            <h2 class="number" v-cloak>{{ number }}</h1>
+            <div class="box">
+                <div class="increment" @click="number++"  onclick="click_grow()"><i class="fa-solid fa-chevron-up"></i></div>
+            </div>
+            <div class="buttons">
+
+                <button @click="number--">Decrease</button>
+                <button onclick="reset()">Reset</button>
+            </div>
+            <p>Share It 🤍 Made By Arshiya. </p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
